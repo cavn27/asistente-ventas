@@ -1,8 +1,8 @@
 [project]
 name = "asistente-ventas"
-version = "0.2.0"
+version = "0.3.0"
 requires-python = ">=3.11"
-dependencies = ["pydantic>=2", "fastapi[standard]"]
+dependencies = ["pydantic>=2", "pydantic-settings", "fastapi[standard]", "psycopg[binary]", "redis"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
