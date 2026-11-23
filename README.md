@@ -1,1 +1,1 @@
-# asistente-ventas
+# Asistente de ventas
