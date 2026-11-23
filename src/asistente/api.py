@@ -6,7 +6,7 @@ from asistente.consultas import a_sql
 from asistente.modelos import PreguntaAnalisis
 from asistente.repositorio import ejecutar
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.INFO, force=True)
 logger = logging.getLogger(__name__)
 
 app = FastAPI(title="Asistente de ventas", version="0.3.0")

@@ -32,6 +32,6 @@ def ejecutar(sql: str, params: dict) -> float | None:
     try:
         _cache.set(clave, json.dumps(resultado), ex=settings.cache_ttl_s)
     except redis.RedisError:
-        pass
+        logger.warning("cache_no_disponible_al_guardar")
     logger.info("cache_miss")
     return resultado
